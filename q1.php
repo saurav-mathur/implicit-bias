@@ -1,8 +1,8 @@
 <head>
-    <link href="style-jallawar.css"
+    <link href="style_questions.css"
           rel="stylesheet"
           type="text/css">
-    <title>Nirmit's Implicit Bias Question</title>
+    <title>Implicit Bias Question 1</title>
 </head>
 <?php
 
@@ -24,7 +24,7 @@ $question_text = "I prefer to be around people who have a similar cultural backg
 
 ?>
 
-<form class="content-container" method="post" action="results.php">
+<form class="content-container" method="post" action="q2.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>

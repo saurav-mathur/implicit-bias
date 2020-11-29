@@ -11,7 +11,7 @@ if (isset($_POST["question"]) && isset($_POST["answer"])){
     
     // Database settings
     $mysql_server="localhost";
-    $mysql_db="raroyst1_cp_group_2";
+    $mysql_db="raroyst1_raroystonorgmain";
     $mysql_port="3306";
     $mysql_user="raroyst1_cfbd_cg";
     $mysql_password="W!SCsin2018";

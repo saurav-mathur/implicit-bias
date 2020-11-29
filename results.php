@@ -1,3 +1,10 @@
+<head>
+    <link href="style_results.css.css"
+          rel="stylesheet"
+          type="text/css">
+    <title>Implicit Bias Test Results</title>
+</head>
+
 <?php
 
 // Created by: Bryan Knowles
@@ -15,18 +22,18 @@ include "store-answer.php";
 
 // Database settings
 // (copy these as necessary for your own projects)
-$mysql_server="localhost";
-$mysql_db="raroyst1_raroystonorgmain";
-$mysql_port="3306";
-$mysql_user="raroyst1_cfbd_cg";
-$mysql_password="W!SCsin2018";
+$mysql_server = "localhost";
+$mysql_db = "raroyst1_raroystonorgmain";
+$mysql_port = "3306";
+$mysql_user = "raroyst1_cfbd_cg";
+$mysql_password = "W!SCsin2018";
 
 // Connect to the database
 $conn = new mysqli($mysql_server, $mysql_user, $mysql_password, $mysql_db);
 
 // Whoops. This shouldn't happen, but if we can't connect to the database "blow up" and stop here
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
 // Prepare our first query: get all the results for this particular user
@@ -39,8 +46,8 @@ $results = $query->get_result();
 
 // Loop through and display the results
 echo '<p>Your results:</p>';
-while ($result = $results->fetch_assoc()){
-  echo '<p><b>'.$result["question"].':</b> '.$result["answer"].'</p>';
+while ($result = $results->fetch_assoc()) {
+    echo '<p><b>' . $result["question"] . ':</b> ' . $result["answer"] . '</p>';
 }
 
 // Close the query
@@ -55,8 +62,8 @@ $results = $query->get_result();
 
 // Loop through and display the results
 echo '<p>Average results:</p>';
-while ($result = $results->fetch_assoc()){
-  echo '<p><b>'.$result["question"].':</b> '.$result["answer"].'</p>';
+while ($result = $results->fetch_assoc()) {
+    echo '<p><b>' . $result["question"] . ':</b> ' . $result["answer"] . '</p>';
 }
 
 // Close the query

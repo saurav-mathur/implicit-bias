@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 }
 
 // Prepare our first query: get all the results for this particular user
-$query = $conn->prepare("SELECT question, answer FROM sharedsurvey WHERE user_id = ? ORDER BY question");
+$query = $conn->prepare("SELECT question, answer FROM cp_group_2 WHERE user_id = ? ORDER BY question");
 $query->bind_param("i", $user_id);
 
 // Run our query to get the results from the database
@@ -47,7 +47,7 @@ while ($result = $results->fetch_assoc()){
 $query->close();
 
 // Prepare our second query: get all the average results for all questions
-$query = $conn->prepare("SELECT question, avg(answer) as answer FROM sharedsurvey GROUP BY question ORDER BY question");
+$query = $conn->prepare("SELECT question, avg(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
 
 // Run our query to get the results from the database
 $query->execute();

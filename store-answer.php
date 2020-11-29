@@ -25,7 +25,7 @@ if (isset($_POST["question"]) && isset($_POST["answer"])){
     }
     
     // Prepare our query
-    $query = $conn->prepare("INSERT INTO sharedsurvey (user_id, question, answer) VALUES (?, ?, ?)");
+    $query = $conn->prepare("INSERT INTO cp_group_2 (user_id, question, answer) VALUES (?, ?, ?)");
     $query->bind_param("iss", $user_id, $_POST["question"], $_POST["answer"]);
     
     // Run the query to store the result of the previous question

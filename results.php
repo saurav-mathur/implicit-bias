@@ -1,5 +1,5 @@
 <head>
-    <link href="style_results.css.css"
+    <link href="style_results.css"
           rel="stylesheet"
           type="text/css">
     <title>Implicit Bias Test Results</title>
@@ -37,37 +37,44 @@ if ($conn->connect_error) {
 }
 
 // Prepare our first query: get all the results for this particular user
-$query = $conn->prepare("SELECT question, answer FROM cp_group_2 WHERE user_id = ? ORDER BY question");
-$query->bind_param("i", $user_id);
+$query1 = $conn->prepare("SELECT question, answer FROM cp_group_2 WHERE user_id = ? ORDER BY question");
+$query1->bind_param("i", $user_id);
 
 // Run our query to get the results from the database
-$query->execute();
-$results = $query->get_result();
-
-// Loop through and display the results
-echo '<p>Your results:</p>';
-while ($result = $results->fetch_assoc()) {
-    echo '<p><b>' . $result["question"] . ':</b> ' . $result["answer"] . '</p>';
-}
-
-// Close the query
-$query->close();
+$query1->execute();
+$results1 = $query1->get_result();
 
 // Prepare our second query: get all the average results for all questions
-$query = $conn->prepare("SELECT question, avg(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
+$query2 = $conn->prepare("SELECT question, avg(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
 
 // Run our query to get the results from the database
-$query->execute();
-$results = $query->get_result();
+$query2->execute();
+$results2 = $query2->get_result();
 
-// Loop through and display the results
-echo '<p>Average results:</p>';
-while ($result = $results->fetch_assoc()) {
-    echo '<p><b>' . $result["question"] . ':</b> ' . $result["answer"] . '</p>';
+echo '<body>';
+echo '<table>';
+echo '<tr>';
+echo '<th>';
+echo 'Questions';
+echo '</th>';
+echo '<th>';
+echo 'Your results';
+echo '</th>';
+echo '<th>';
+echo 'Average Result';
+echo '</th>';
+echo '</tr>';
+while ($result2 = $results2->fetch_assoc()) {
+    $result1 = $results1->fetch_assoc();
+    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . $result2["answer"] . '</td></tr>';
 }
+echo '</table>';
+echo '</body>';
+
 
 // Close the query
-$query->close();
+$query1->close();
+$query2->close();
 
 // Close the connection
 $conn->close();

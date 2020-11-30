@@ -1,19 +1,26 @@
-/*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
+/* Taken from CS400 CGI Activity in Fall 2020 */
 
-body {
-    font-family: 'Merriweather', serif;
-    background-color: #ededed;
-    color: #212121;
-    padding: 1.618rem;
-    line-height: 1.618;
-    font-size: 16px;
+table {
+    border-collapse: collapse;
+    margin: 40px 30px;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px #00000040;
 }
 
-.content-container {
-    padding: 1.618rem 3.236rem;
-    max-width: 48.54rem;
-    margin: 3.236rem auto;
-    background-color: #fff;
-    box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05);
-    border-radius: .269666667rem;
+th, td {
+    padding: 12px 15px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+    border-bottom: none;
 }

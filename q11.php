@@ -18,13 +18,13 @@ $user_id = $_POST["user_id"];
 include "store-answer.php";
 
 // Specify the question text to be displayed on this page
-$question_text = "I am more likely to vote for a person of my same race in an election.";
+$question_text = "I feel more anxious talking to people of a different race.";
 
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 
 ?>
 
-<form class="content-container" method="post" action="q12.php">
+<form class="content-container" method="post" action="results.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>

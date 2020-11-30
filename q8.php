@@ -2,7 +2,7 @@
     <link href="style_questions.css"
           rel="stylesheet"
           type="text/css">
-    <title>Implicit Bias Question 1</title>
+    <title>Implicit Bias Question 8</title>
 </head>
 <?php
 

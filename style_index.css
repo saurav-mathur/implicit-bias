@@ -1,7 +1,7 @@
 /*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: #ededed;
     color: #212121;
     padding: 1.618rem;
@@ -16,4 +16,42 @@ body {
     background-color: #fff;
     box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05);
     border-radius: .269666667rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #30292F;
+    font-family: 'Pacifico', cursive;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+/* Links will change color when hovered over */
+li a:hover {
+    background-color: #5D737E;
+}
+
+.active {
+    background-color: #3F4045;
+}
+
+.footer {
+    color: #3F4045;
+    text-align: center;
+    /*padding: 10px;*/
+    position: absolute;
+    bottom: 0;
 }

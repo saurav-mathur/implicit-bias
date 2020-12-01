@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <h1 align="center">
+        PHP Panthers
+    </h1>
     <nav>
         <ul>
             <li><a class="active" href="index.php">Homepage</a></li>

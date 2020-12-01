@@ -19,6 +19,11 @@ $user_id = rand(10000, 99999);
     <p><input type="submit" value="Begin Survey"/></p>
 
 </form>
+<?php
+    
+    $thisYear = Date('Y/m/d');
+    echo "<p>Date:$thisYear</p>"
+?>
 </body>
 </html>
 

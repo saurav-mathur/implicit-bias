@@ -55,7 +55,8 @@ li a:hover {
 .footer {
     color: #3F4045;
     text-align: center;
-    /*padding: 10px;*/
+    padding: 10px;
     position: absolute;
     bottom: 0;
+    width: 100%;
 }

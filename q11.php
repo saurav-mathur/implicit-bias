@@ -23,7 +23,9 @@ $question_text = "I feel more anxious talking to people of a different race.";
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 
 ?>
-
+<div calss="number">
+   <h3>11 / 11</h3>
+</div>
 <form class="content-container" method="post" action="results.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>

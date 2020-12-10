@@ -23,7 +23,9 @@ $question_text = "I am more likely to vote for a person of my same race in an el
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 
 ?>
-
+<div calss="number">
+   <h3>9 / 11</h3>
+</div>
 <form class="content-container" method="post" action="q10.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>

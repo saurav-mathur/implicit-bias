@@ -4,6 +4,7 @@
           type="text/css">
     <title>Implicit Bias Question 1</title>
 </head>
+
 <?php
 
 // Created by: Nirmit Jallawar
@@ -23,6 +24,9 @@ $question_text = "I prefer to be around people who have a similar cultural backg
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 
 ?>
+<div calss="number">
+   <h3>1 / 11</h3>
+</div>
 
 <form class="content-container" method="post" action="q2.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>

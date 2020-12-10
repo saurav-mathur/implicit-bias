@@ -30,9 +30,10 @@
 // Generate a random number to use to identify the visitor throughout the survey
 $user_id = rand(10000, 99999);
 ?>
-<p>Welcome to the implicit bias test. We expect this survey to take about 10 minutes to
-    complete.</p>
-
+<p align = "center">Welcome to the implicit bias test. We expect this survey to take about 10 minutes to
+    complete.<br> You will be asked a series of questions and will have to indicate your choice by selecting the appropriate option.
+    <br> After completing the survey, you can compare your choices to other results collected anonymously, the scale being 1 for strongly disagree and 5 for strongly agree.</p>
+<div align = "center">
 <p>Please click on the button below to start the survey:</p>
 
 <form method="post" action="q1.php">
@@ -40,9 +41,9 @@ $user_id = rand(10000, 99999);
     <p><input type="submit" value="Begin Survey"/></p>
 
 </form>
-
-<div class="footer" align="center">
-    <p>Created by Nirmit, Saurav, Ashley and Yutong for LIS 500</p>
+</div>
+<div class="footer">
+    <p align = "center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for LIS 500</p>
 </div>
 
 </body>

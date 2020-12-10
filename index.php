@@ -18,8 +18,8 @@
             <li><a class="active" href="index.php">Homepage</a></li>
             <li><a href="q1.php">Survey</a></li>
             <li><a href="results.php">Results</a></li>
-            <li><a>Reflections</a></li>
-            <li><a>About</a></li>
+            <li><a href="reflections.php">Reflections</a></li>
+            <li><a href="about.php">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>

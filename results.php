@@ -16,8 +16,8 @@
             <li><a href="index.php">Homepage</a></li>
             <li><a href="q1.php">Survey</a></li>
             <li><a class="active" href="results.php">Results</a></li>
-            <li><a>Reflections</a></li>
-            <li><a>About</a></li>
+            <li><a href="reflections.php">Reflections</a></li>
+            <li><a href="about.php">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -70,7 +70,7 @@ $query2->execute();
 $results2 = $query2->get_result();
 
 echo '<body>';
-echo '<table>';
+echo '<table class="center">';
 echo '<tr>';
 echo '<th>';
 echo 'Questions';
@@ -93,6 +93,14 @@ echo '</body>';
 // Close the query
 $query1->close();
 $query2->close();
+
+$query3 = $conn->prepare("SELECT question, count(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
+$query3->execute();
+$results3 = $query3->get_result();
+
+while ($result3 = $results3->fetch_assoc()) {
+    echo '<tr><td>' . $result3["question"] . '</td><td>' . $result3["answer"] . '</td><td>' . round($result3["answer"]) . '</td></tr>';
+}
 
 // Close the connection
 $conn->close();

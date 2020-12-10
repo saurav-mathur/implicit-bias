@@ -2,7 +2,25 @@
     <link href="style_results.css"
           rel="stylesheet"
           type="text/css">
+    <link href="style_index.css"
+          rel="stylesheet"
+          type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
     <title>Implicit Bias Test Results</title>
+    <nav>
+        <ul>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="q1.php">Survey</a></li>
+            <li><a class="active" href="results.php">Results</a></li>
+            <li><a>Reflections</a></li>
+            <li><a>About</a></li>
+            <li style="float: right;"><a>PHP Panthers</a></li>
+        </ul>
+    </nav>
 </head>
 
 <?php
@@ -66,7 +84,7 @@ echo '</th>';
 echo '</tr>';
 while ($result2 = $results2->fetch_assoc()) {
     $result1 = $results1->fetch_assoc();
-    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . $result2["answer"] . '</td></tr>';
+    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . round($result2["answer"]) . '</td></tr>';
 }
 echo '</table>';
 echo '</body>';

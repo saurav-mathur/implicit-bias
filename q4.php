@@ -40,7 +40,9 @@ $question_text = "I would have more trust in my lawyer if they were of the same 
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 
 ?>
-
+<div calss="number">
+   <h3>4 / 12</h3>
+</div>
 <form class="content-container" method="post" action="q5.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>

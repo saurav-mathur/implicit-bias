@@ -2,7 +2,7 @@
     <link href="style_questions.css"
           rel="stylesheet"
           type="text/css">
-    <title>Implicit Bias Question 12</title>
+    <title>Implicit Bias Question 4</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
           rel="stylesheet">
@@ -41,7 +41,7 @@ $question_text = "I would have more trust in my lawyer if they were of the same 
 
 ?>
 
-<form class="content-container" method="post" action="q4.php">
+<form class="content-container" method="post" action="q5.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>

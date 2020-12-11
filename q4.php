@@ -18,7 +18,7 @@ $user_id = $_POST["user_id"];
 include "store-answer.php";
 
 // Specify the question text to be displayed on this page
-$question_text = "I often get treated indifferently in a group project because of my race.";
+$question_text = "I often get the cold shoulder in a group project because of my race.";
 
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 

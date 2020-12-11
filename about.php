@@ -75,6 +75,26 @@
         </div>
     </div>
 </div>
+    
+    <div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="image-container">
+            <img align = "center"
+            src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/99299568_10224177214198489_5073468133155536896_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=vkYB2v8Ms0IAX9f6T5w&_nc_ht=scontent-ort2-1.xx&oh=bb253a40e376cffa46052db64442db0f&oe=5F9F7082"
+                 alt="Jane" style="width:30%">
+            </div>
+            <div class="container">
+                <h2>Ashley Massey</h2>
+ 
+            My name is Ashley and I am in my second year of grad school here at UW-Madison. I am working towards my MLIS.
+            I live in Champaign, Illinois, right next to the University of Illinois.
+			When I am not doing school work, I enjoy watching multiple different streaming services, spending time with my boyfriend, baking cookies, and, when we are not in pandemic, going to Walt Disney World.
+            </p>
+                
+            </div>
+        </div>
+    </div>
 
 <div class="footer">
     <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for

@@ -15,7 +15,7 @@
     </h1>
     <nav>
         <ul>
-            <li><a class="active" href="index.php"target="_blank">Homepage</a></li>
+            <li><a class="active" href="index.php">Homepage</a></li>
             <li><a href="q1.php"target="_blank">Survey</a></li>
             <li><a href="results.php"target="_blank">Results</a></li>
             <li><a href="reflections.php"target="_blank">Reflections</a></li>

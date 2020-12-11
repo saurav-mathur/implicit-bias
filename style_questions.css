@@ -54,3 +54,11 @@ li a:hover {
 .cursive {
     font-family: 'Indie Flower', cursive;;
 }
+
+.footer {
+    text-align: left;
+    padding: 3px;
+    text-indent: 5%;
+    background-color: #30292F;
+    color: White;
+}

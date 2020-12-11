@@ -22,7 +22,7 @@
             <li><a href="q1.php"target="_blank">Survey</a></li>
             <li><a href="results.php"target="_blank">Results</a></li>
             <li><a href="reflections.php"target="_blank">Reflections</a></li>
-            <li><a class="active" href="about.php"target="_blank">About</a></li>
+            <li><a class="active" href="about.php">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -75,8 +75,7 @@
         </div>
     </div>
 </div>
-    
-    <div class="row">
+<div class="row">
     <div class="column">
         <div class="card">
             <div class="image-container">
@@ -86,15 +85,16 @@
             </div>
             <div class="container">
                 <h2>Ashley Massey</h2>
- 
+
             My name is Ashley and I am in my second year of grad school here at UW-Madison. I am working towards my MLIS.
             I live in Champaign, Illinois, right next to the University of Illinois.
 			When I am not doing school work, I enjoy watching multiple different streaming services, spending time with my boyfriend, baking cookies, and, when we are not in pandemic, going to Walt Disney World.
             </p>
-                
+
             </div>
         </div>
     </div>
+
 
 <div class="footer">
     <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for

@@ -54,3 +54,6 @@ $question_text = "I would prefer my child or future children to go to a school w
     <p><input type="radio" name="answer" value="1"/> I Strongly Disagree</p>
     <p><input type="submit" value="Continue"/></p>
 </form>
+<div class="footer">
+    <p align = "center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for LIS 500</p>
+</div>

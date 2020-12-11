@@ -18,7 +18,7 @@ $user_id = $_POST["user_id"];
 include "store-answer.php";
 
 // Specify the question text to be displayed on this page
-$question_text = "I prefer to attend a place of worship with people of my same race.";
+$question_text = "If I were to attend a place of worship, I would prefer to attend one with people of my same race. (If you are not religious, please respond 'neutral')";
 
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 

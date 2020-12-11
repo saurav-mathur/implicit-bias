@@ -3,6 +3,23 @@
           rel="stylesheet"
           type="text/css">
     <title>Implicit Bias Question 12</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <h1 align="center" class="cursive">
+        PHP Panthers
+    </h1>
+    <nav>
+        <ul>
+            <li><a href="index.php" target="_blank">Homepage</a></li>
+            <li><a href="results.php" target="_blank">Results</a></li>
+            <li><a href="reflections.php" target="_blank">Reflections</a></li>
+            <li><a href="about.php" target="_blank">About</a></li>
+            <li style="float: right;"><a>PHP Panthers</a></li>
+        </ul>
+    </nav>
 </head>
 <?php
 

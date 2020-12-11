@@ -26,7 +26,7 @@
 // Created by: Yutong Wang
 // Based on: index.php
 // Last Modified on: Dec 10, 2020
-// Last Modified by: Yutong Wang
+// Last Modified by: Saurav Mathur
 
 // Grab the user id from the POST data sent to us from the previous page
 $user_id = $_POST["user_id"];
@@ -43,7 +43,7 @@ $question_text = "I feel more anxious talking to people of a different race than
 <div calss="number">
    <h3>12 / 12</h3>
 </div>
-<form class="content-container" method="post" action="results.php">
+<form class="content-container" method="post" action="panthers_feedback.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>

@@ -29,3 +29,11 @@ tr:last-of-type {
     margin-left: auto;
     margin-right: auto;
 }
+
+.footer {
+    text-align: left;
+    padding: 3px;
+    text-indent: 5%;
+    background-color: #30292F;
+    color: White;
+}

@@ -25,7 +25,7 @@
 
 // Created by: Saurav Mathur
 // Based on: index.php
-// Last Modified on: Nov 29, 2020
+// Last Modified on: Dec 10, 2020
 // Last Modified by: Saurav Mathur
 
 // Grab the user id from the POST data sent to us from the previous page
@@ -47,7 +47,7 @@ $question_text = "I feel more comfortable voicing my opinions around people of m
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>
-    <p><input type="radio" name="answer" value="5"/> I Strongly Agree</p>
+    <p><input type="radio" name="answer" value="5" required/> I Strongly Agree</p>
     <p><input type="radio" name="answer" value="4"/> I Agree</p>
     <p><input type="radio" name="answer" value="3"/> Neutral</p>
     <p><input type="radio" name="answer" value="2"/> I Disagree</p>

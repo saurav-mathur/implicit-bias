@@ -18,11 +18,11 @@
     </h1>
     <nav>
         <ul>
-            <li><a href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a class="active" href="about.php">About</a></li>
+            <li><a href="index.php"target="_blank">Homepage</a></li>
+            <li><a href="q1.php"target="_blank">Survey</a></li>
+            <li><a href="results.php"target="_blank">Results</a></li>
+            <li><a href="reflections.php"target="_blank">Reflections</a></li>
+            <li><a class="active" href="about.php"target="_blank">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -38,31 +38,39 @@
 <div class="row">
     <div class="column">
         <div class="card">
-            <img src="http://njandsm.raroyston.org/nirmit_image.jpg"
+            <div class="image-container">
+            <img align = "center"
+            src="http://njandsm.raroyston.org/nirmit_image.jpg"
                  alt="Jane" style="width:30%">
+            </div>
             <div class="container">
                 <h2>Nirmit Jallawar</h2>
                 <!--                <p class="title">CEO & Founder</p>-->
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <p>
-                    <button class="button">Contact</button>
-                </p>
+                <p>Hello and welcome again to our webpage!
+            My name is Nirmit and I am a junior here at Madison. I am majoring in Computer
+            Engineering and Mathematics.
+            My hometown is the town of Kalyan, a short drive from the heart of Mumbai.
+            As for my hobbies I love cooking and solving puzzles.
+            I am also an avid movie watcher and like to read sci-fi novels.</p>
+                
             </div>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <img src="http://njandsm.raroyston.org/saurav_image.jpg" alt="Mike" style="width:30%">
+            <div class="image-container">
+            <img align = "center"
+            src="http://njandsm.raroyston.org/saurav_image.jpg" alt="Mike" style="width:30%">
+            </div>
             <div class="container">
                 <h2>Saurav Mathur</h2>
-                <!--                <p class="title">Art Director</p>-->
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p>
-                    <button class="button">Contact</button>
-                </p>
+               
+                <p>Hello! I am Saurav Mathur. I am a junior here at UW-Madison and I am double majoring in
+            Computer Engineering and Computer Science. My hometown is Mumbai. My hobbies include
+            reading books, playing cricket and soccer, and
+            travelling. Recently, I have also developed interest in cooking.</p>
+                
             </div>
         </div>
     </div>

@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
     <title>Implicit Bias Test Results</title>
+    <h1 align="center">
+        PHP Panthers
+    </h1>
     <nav>
         <ul>
-            <li><a href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a class="active" href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a href="about.php">About</a></li>
+            <li><a href="index.php"target="_blank">Homepage</a></li>
+            <li><a href="q1.php"target="_blank">Survey</a></li>
+            <li><a class="active" href="results.php"target="_blank">Results</a></li>
+            <li><a href="reflections.php"target="_blank">Reflections</a></li>
+            <li><a href="about.php"target="_blank">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -33,8 +36,8 @@
 // Grab the user id from the POST data sent to us from previous page
 $user_id = $_POST["user_id"];
 
-// Store the answer to the previous question, if applicable
-include "store-answer.php";
+// This is to store any recieved feedback
+include "panthers_feedback_store.php";
 
 // Time to retreive from the database all data we've collected for this visitor throughout the survey
 
@@ -69,6 +72,15 @@ $query2 = $conn->prepare("SELECT question, avg(answer) as answer FROM cp_group_2
 $query2->execute();
 $results2 = $query2->get_result();
 
+// Prepare our third query: get all the average results for all questions
+$query3 = $conn->prepare("SELECT DISTINCT(question), answer, y FROM (SELECT question, answer, (COUNT(answer)) y from cp_group_2 GROUP by question, answer ORDER by COUNT(answer) DESC) x group by question");
+
+// Run our query to get the results from the database
+$query3->execute();
+$results3 = $query3->get_result();
+
+
+
 echo '<body>';
 echo '<table class="center">';
 echo '<tr>';
@@ -79,12 +91,17 @@ echo '<th>';
 echo 'Your results';
 echo '</th>';
 echo '<th>';
-echo 'Average Result';
+echo 'Average result';
+echo '</th>';
+echo '<th>';
+echo 'Most frequent result';
 echo '</th>';
 echo '</tr>';
+
 while ($result2 = $results2->fetch_assoc()) {
     $result1 = $results1->fetch_assoc();
-    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . round($result2["answer"]) . '</td></tr>';
+    $result3 = $results3->fetch_assoc();
+    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . round($result2["answer"]) . '</td><td>' . round($result3["answer"]) . '</td></tr>';
 }
 echo '</table>';
 echo '</body>';
@@ -93,16 +110,26 @@ echo '</body>';
 // Close the query
 $query1->close();
 $query2->close();
+$query3->close();
 
-$query3 = $conn->prepare("SELECT question, count(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
-$query3->execute();
-$results3 = $query3->get_result();
 
-while ($result3 = $results3->fetch_assoc()) {
-    echo '<tr><td>' . $result3["question"] . '</td><td>' . $result3["answer"] . '</td><td>' . round($result3["answer"]) . '</td></tr>';
-}
+// $query3 = $conn->prepare("SELECT question, count(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
+// $query3->execute();
+// $results3 = $query3->get_result();
+
+//find the mode
+//SELECT DISTINCT(question), answer, y FROM (SELECT question, answer, (COUNT(answer)) y from cp_group_2 GROUP by question, answer ORDER by COUNT(answer) DESC) x group by question
+
+// while ($result3 = $results3->fetch_assoc()) {
+//     echo '<tr><td>' . $result3["question"] . '</td><td>' . $result3["answer"] . '</td><td>' . round($result3["answer"]) . '</td></tr>';
+// }
 
 // Close the connection
 $conn->close();
 
 ?>
+
+</div>
+<div class="footer">
+    <p align = "center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for LIS 500</p>
+</div>

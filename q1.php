@@ -49,7 +49,7 @@ $question_text = "I prefer to be around people who have a similar cultural backg
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>
-    <p><input type="radio" name="answer" value="5"/> I Strongly Agree</p>
+    <p><input type="radio" name="answer" value="5" required/> I Strongly Agree</p>
     <p><input type="radio" name="answer" value="4"/> I Agree</p>
     <p><input type="radio" name="answer" value="3"/> Neutral</p>
     <p><input type="radio" name="answer" value="2"/> I Disagree</p>

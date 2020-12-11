@@ -25,7 +25,7 @@
 
 // Created by: Saurav Mathur
 // Based on: index.php
-// Last Modified on: Nov 29, 2020
+// Last Modified on: Dec 10, 2020
 // Last Modified by: Saurav Mathur
 
 // Grab the user id from the POST data sent to us from the previous page

@@ -15,11 +15,11 @@
     </h1>
     <nav>
         <ul>
-            <li><a class="active" href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a href="about.php">About</a></li>
+            <li><a class="active" href="index.php"target="_blank">Homepage</a></li>
+            <li><a href="q1.php"target="_blank">Survey</a></li>
+            <li><a href="results.php"target="_blank">Results</a></li>
+            <li><a href="reflections.php"target="_blank">Reflections</a></li>
+            <li><a href="about.php"target="_blank">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -30,7 +30,10 @@
 // Generate a random number to use to identify the visitor throughout the survey
 $user_id = rand(10000, 99999);
 ?>
-<p align = "center">Welcome to the implicit bias test. We expect this survey to take about 10 minutes to
+<h2 align="center">
+    Welcome to our Implicit Racial Bias Test!
+</h2>
+<p align = "center">We expect this survey to take about 10 minutes to
     complete.<br> You will be asked a series of questions and will have to indicate your choice by selecting the appropriate option.
     <br> After completing the survey, you can compare your choices to other results collected anonymously, the scale being 1 for strongly disagree and 5 for strongly agree.</p>
 <div align = "center">

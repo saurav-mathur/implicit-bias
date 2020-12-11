@@ -141,3 +141,8 @@ html {
         display: block;
     }
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}

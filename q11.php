@@ -8,8 +8,8 @@
 
 // Created by: Yutong Wang
 // Based on: index.php
-// Last Modified on: Nov 30, 2020
-// Last Modified by: Yutong Wang
+// Last Modified on: Dec 10, 2020
+// Last Modified by: Ashley Massey
 
 // Grab the user id from the POST data sent to us from the previous page
 $user_id = $_POST["user_id"];
@@ -18,7 +18,7 @@ $user_id = $_POST["user_id"];
 include "store-answer.php";
 
 // Specify the question text to be displayed on this page
-$question_text = "I feel more anxious talking to people of a different race.";
+$question_text = "I feel more anxious talking to people of a different race than I do talking to people of my same race.";
 
 // Use the question text and the user id to create a form for this question that will take us to the next question OR the results page, whichever should come next:
 

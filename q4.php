@@ -24,9 +24,9 @@ $question_text = "I often get the cold shoulder in a group project because of my
 
 ?>
 <div calss="number">
-   <h3>4 / 11</h3>
+   <h3>5 / 12</h3>
 </div>
-<form class="content-container" method="post" action="q5.php">
+<form class="content-container" method="post" action="q6.php">
     <?php echo '<h1>' . $question_text . '</h1>'; ?>
     <?php echo '<p><input type="hidden" name="user_id" value="' . $user_id . '" /></p>'; ?>
     <?php echo '<p><input type="hidden" name="question" value="' . $question_text . '" /></p>'; ?>

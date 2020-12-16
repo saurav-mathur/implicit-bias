@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link href="style_results.css"
           rel="stylesheet"
@@ -14,21 +16,22 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <title>Implicit Bias Test Results</title>
-    <h1 class="topHead">
-        PHP Panthers
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a class="active" href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="resources.php">Resources</a></li>
-            <li style="float: right;"><a>PHP Panthers</a></li>
-        </ul>
-    </nav>
 </head>
+<body>
+<h1 class="topHead">
+    PHP Panthers
+</h1>
+<nav>
+    <ul>
+        <li><a href="index.php">Homepage</a></li>
+        <li><a href="q1.php">Survey</a></li>
+        <li><a class="active" href="results.php">Results</a></li>
+        <li><a href="reflections.php">Reflections</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li style="float: right;"><a>PHP Panthers</a></li>
+    </ul>
+</nav>
 
 <?php
 
@@ -84,18 +87,17 @@ $query3->execute();
 $results3 = $query3->get_result();
 
 
-echo '<body>';
 
 ?>
 
 <div class="content-container">
-    <div align="center">
-        <img align="center"
+    <div class="cent">
+        <img class="cent"
              src="https://cache.careers360.mobi/media/presets/860X430/article_images/2019/6/3/aibe-result.jpg"
              alt="Jane" style="width:70%">
     </div>
 
-    <h2 align="center">Results</h2>
+    <h2 class="cent">Results</h2>
     <!--                <p class="title">CEO & Founder</p>-->
     <p>
         Thank you for taking our Implicit Bias Test.
@@ -136,7 +138,6 @@ while ($result2 = $results2->fetch_assoc()) {
     $q_num = $q_num + 1;
 }
 echo '</table>';
-echo '</body>';
 
 
 // Close the query
@@ -151,13 +152,13 @@ $conn->close();
 ?>
 
 <div class="content-container">
-    <div align="center">
-        <img align="center"
+    <div class="cent">
+        <img class="cent"
              src="https://ifanboy.com/wp-content/uploads/2013/07/now-what.jpg"
              alt="Jane" style="width:70%">
     </div>
 
-    <h2 align="center">Now what?</h2>
+    <h2 class="cent">Now what?</h2>
     <p>
         You have taken test and read our interpretation of your data. What next? How do you learn
         from this? We recommend the following:
@@ -175,8 +176,10 @@ $conn->close();
 </div>
 
 
-</div>
 <div class="footer">
-    <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
+    <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>
 </div>
+
+</body>
+</html>

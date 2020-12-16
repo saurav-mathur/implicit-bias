@@ -16,11 +16,11 @@
     </h1>
     <nav>
         <ul>
-            <li><a href="index.php"target="_blank">Homepage</a></li>
-            <li><a href="q1.php"target="_blank">Survey</a></li>
+            <li><a href="index.php" target="_blank">Homepage</a></li>
+            <li><a href="q1.php" target="_blank">Survey</a></li>
             <li><a class="active" href="results.php">Results</a></li>
-            <li><a href="reflections.php"target="_blank">Reflections</a></li>
-            <li><a href="about.php"target="_blank">About</a></li>
+            <li><a href="reflections.php" target="_blank">Reflections</a></li>
+            <li><a href="about.php" target="_blank">About</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>

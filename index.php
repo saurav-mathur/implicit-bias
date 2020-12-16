@@ -12,16 +12,18 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
-    <h1 class="topHead" align="center" >
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <h1 class="topHead" align="center">
         PHP Panthers
     </h1>
     <nav>
         <ul>
             <li><a class="active" href="index.php">Homepage</a></li>
-            <li><a href="q1.php" target="_blank">Survey</a></li>
-            <li><a href="results.php" target="_blank">Results</a></li>
-            <li><a href="reflections.php" target="_blank">Reflections</a></li>
-            <li><a href="about.php" target="_blank">About</a></li>
+            <li><a href="q1.php" ">Survey</a></li>
+            <li><a href="results.php" ">Results</a></li>
+            <li><a href="reflections.php" ">Reflections</a></li>
+            <li><a href="about.php" ">About</a></li>
+            <li><a href="resources.php">Resources</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -67,9 +69,27 @@ $user_id = rand(10000, 99999);
     <form method="post" action="q1.php">
         <?php echo '<input type="hidden" name="user_id" value="' . $user_id . '" />'; ?>
         <p><input type="submit" value="Begin Survey"/></p>
-
     </form>
 </div>
+
+<h2 align="center">
+    About the Survey
+</h2>
+
+<p align="center">
+    This survey is meant to make the test taker think more about their own biases, whether
+    positive or negative.
+    <br>
+    It does so by posing them with questions where a responses on one end of the spectrum
+    indicates a bias.
+    <br>
+    This should not be thought of as a test, but more of a tool that can help you understand your
+    affinity towards a school of thought.
+    <br>
+    For more information about Implicit Bias Tests, be sure to check out the video above as well as
+    our Resources page.
+</p>
+
 <div class="footer">
     <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>

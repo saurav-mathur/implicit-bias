@@ -8,19 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+          rel="stylesheet">
     <title>Implicit Bias Test Results</title>
-    <h1 align="center">
+    <h1 class="topHead">
         PHP Panthers
     </h1>
     <nav>
         <ul>
-            <li><a href="index.php" target="_blank">Homepage</a></li>
-            <li><a href="q1.php" target="_blank">Survey</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="q1.php">Survey</a></li>
             <li><a class="active" href="results.php">Results</a></li>
-            <li><a href="reflections.php" target="_blank">Reflections</a></li>
-            <li><a href="about.php" target="_blank">About</a></li>
+            <li><a href="reflections.php">Reflections</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="resources.php">Resources</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
     </nav>
@@ -80,8 +83,33 @@ $query3->execute();
 $results3 = $query3->get_result();
 
 
-
 echo '<body>';
+
+?>
+
+<div class="content-container">
+    <div align="center">
+        <img align="center"
+             src="https://cache.careers360.mobi/media/presets/860X430/article_images/2019/6/3/aibe-result.jpg"
+             alt="Jane" style="width:70%">
+    </div>
+
+    <h2 align="center">Results</h2>
+    <!--                <p class="title">CEO & Founder</p>-->
+    <p>
+        Thank you for taking our Implicit Bias Test.
+        <br>
+        You can view your answers and compare them with that of other survey participants in the
+        table below.
+        <br>
+        After you have viewed your results, please consult the information given below to interpret
+        your results.
+    </p>
+</div>
+
+<?php
+
+
 echo '<table class="center">';
 echo '<tr>';
 echo '<th>';
@@ -98,10 +126,13 @@ echo 'Most frequent result';
 echo '</th>';
 echo '</tr>';
 
+$q_num = 1;
+
 while ($result2 = $results2->fetch_assoc()) {
     $result1 = $results1->fetch_assoc();
     $result3 = $results3->fetch_assoc();
-    echo '<tr><td>' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . round($result2["answer"]) . '</td><td>' . round($result3["answer"]) . '</td></tr>';
+    echo '<tr><td>' . $q_num . ') ' . $result2["question"] . '</td><td>' . $result1["answer"] . '</td><td>' . round($result2["answer"]) . '</td><td>' . round($result3["answer"]) . '</td></tr>';
+    $q_num = $q_num + 1;
 }
 echo '</table>';
 echo '</body>';
@@ -113,23 +144,38 @@ $query2->close();
 $query3->close();
 
 
-// $query3 = $conn->prepare("SELECT question, count(answer) as answer FROM cp_group_2 GROUP BY question ORDER BY question");
-// $query3->execute();
-// $results3 = $query3->get_result();
-
-//find the mode
-//SELECT DISTINCT(question), answer, y FROM (SELECT question, answer, (COUNT(answer)) y from cp_group_2 GROUP by question, answer ORDER by COUNT(answer) DESC) x group by question
-
-// while ($result3 = $results3->fetch_assoc()) {
-//     echo '<tr><td>' . $result3["question"] . '</td><td>' . $result3["answer"] . '</td><td>' . round($result3["answer"]) . '</td></tr>';
-// }
-
 // Close the connection
 $conn->close();
 
 ?>
 
+<div class="content-container">
+    <div align="center">
+        <img align="center"
+             src="https://cache.careers360.mobi/media/presets/860X430/article_images/2019/6/3/aibe-result.jpg"
+             alt="Jane" style="width:70%">
+    </div>
+
+    <h2 align="center">What now?</h2>
+    <p>
+        You have taken test and read our interpretation of your data. What next? How do you learn
+        from this? We recommend the following:
+        <br>
+        1. Understand why you answered a question one way instead of another. Would you answer it
+        similarly the next time?
+        Why or why not?
+        <br>
+        2. Try taking the actual Harvard Implicit Bias Test which inspired this survey. Did your
+        results vary significantly?
+        <br>
+        3. Reflect. Then reflect again on if you need to make any changes to the way you approach
+        race and or related issues in your daily life.
+    </p>
+</div>
+
+
 </div>
 <div class="footer">
-    <p align = "center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for LIS 500</p>
+    <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
+        LIS 500</p>
 </div>

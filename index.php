@@ -49,6 +49,7 @@ $user_id = rand(10000, 99999);
     Before beginning the test, please take a moment to explore the information provided on the
     Additional Resources page and watch the following video:
     <br>
+    <br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WLQ2OlciaVk" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>

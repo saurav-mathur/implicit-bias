@@ -3,42 +3,42 @@
 <head>
     <meta charset="utf-8">
     <title>PHP Panthers</title>
-    <link href="style_index.css"
-          rel="stylesheet"
-          type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <h1 class="topHead">
-        PHP Panthers
-    </h1>
-    <nav>
-        <ul>
-            <li><a class="active" href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="resources.php">Resources</a></li>
-            <li style="float: right;"><a>PHP Panthers</a></li>
-        </ul>
-    </nav>
 </head>
 <body>
+<link href="style_index.css"
+      rel="stylesheet"
+      type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+<h1 class="topHead">
+    PHP Panthers
+</h1>
+<nav>
+    <ul>
+        <li><a class="active" href="index.php">Homepage</a></li>
+        <li><a href="q1.php">Survey</a></li>
+        <li><a href="results.php">Results</a></li>
+        <li><a href="reflections.php">Reflections</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li style="float: right;"><a>PHP Panthers</a></li>
+    </ul>
+</nav>
 <?php
 
 // Generate a random number to use to identify the visitor throughout the survey
 $user_id = rand(10000, 99999);
 ?>
-<h2 align="center">
+<h2 class="cent">
     Welcome to our Implicit Racial Bias Test!
 </h2>
-<p align="center">
+<p class="cent">
     This test/survey is intended to allow the users to get in touch with their own (racial) biases.
     <br>
     This not a scientifically accurate survey - you may end up with interpretations of your answers
@@ -51,12 +51,12 @@ $user_id = rand(10000, 99999);
     Additional Resources page and watch the following video:
     <br>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WLQ2OlciaVk" frameborder="0"
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WLQ2OlciaVk"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 </p>
 
-<p align="center">
+<p class="cent">
     We expect this survey to take about 10 minutes to complete.
     <br>
     You will be asked a series of questions and will have to indicate your choice by
@@ -64,7 +64,7 @@ $user_id = rand(10000, 99999);
     <br>
     Please do not second guess yourself to allow for the optimal experience.
 </p>
-<div align="center">
+<div class="cent">
     <p>Please click on the button below to start the survey:</p>
 
 
@@ -74,11 +74,11 @@ $user_id = rand(10000, 99999);
     </form>
 </div>
 
-<h2 align="center">
+<h2 class="cent">
     About the Survey
 </h2>
 
-<p align="center">
+<p class="cent">
     This survey is meant to make the test taker think more about their own biases, whether
     positive or negative.
     <br>
@@ -93,7 +93,7 @@ $user_id = rand(10000, 99999);
 </p>
 
 <div class="footer">
-    <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
+    <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>
 </div>
 

@@ -9,15 +9,16 @@ body {
     font-size: 16px;
 }
 
-.topHead{
+.topHead {
     padding-top: 22px;
+    align: center;
 }
 
 h1 {
     font-family: 'Indie Flower', cursive;;
 }
 
-p{
+p {
     font-size: x-large;
 }
 
@@ -36,7 +37,7 @@ ul {
     padding: 1px;
     overflow: hidden;
     background-color: #30292F;
-    ont-family: 'Patua One', serif;
+    font-family: 'Patua One', serif;
 }
 
 li {

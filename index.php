@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,16 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <h1 class="topHead" align="center">
+    <h1 class="topHead">
         PHP Panthers
     </h1>
     <nav>
         <ul>
             <li><a class="active" href="index.php">Homepage</a></li>
-            <li><a href="q1.php" ">Survey</a></li>
-            <li><a href="results.php" ">Results</a></li>
-            <li><a href="reflections.php" ">Reflections</a></li>
-            <li><a href="about.php" ">About</a></li>
+            <li><a href="q1.php">Survey</a></li>
+            <li><a href="results.php">Results</a></li>
+            <li><a href="reflections.php">Reflections</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="resources.php">Resources</a></li>
             <li style="float: right;"><a>PHP Panthers</a></li>
         </ul>
@@ -98,4 +99,3 @@ $user_id = rand(10000, 99999);
 
 </body>
 </html>
-

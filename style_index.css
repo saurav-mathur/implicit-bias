@@ -1,5 +1,6 @@
 /*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
 
+/*Settings for the background*/
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #ededed;
@@ -9,19 +10,17 @@ body {
     font-size: 16px;
 }
 
-.topHead {
-    padding-top: 22px;
-    text-align: center;
-}
-
+/*Set font fo the heading*/
 h1 {
     font-family: 'Indie Flower', cursive;
 }
 
+/*Set font size of the text*/
 p {
     font-size: x-large;
 }
 
+/*The "card" CSS*/
 .content-container {
     padding: 1.618rem 3.236rem;
     max-width: 48.54rem;
@@ -31,6 +30,7 @@ p {
     border-radius: .269666667rem;
 }
 
+/*Navigation bar CSS stuff*/
 ul {
     list-style-type: none;
     margin: 1px;
@@ -61,29 +61,40 @@ li a:hover {
     background-color: #3F4045;
 }
 
+/*Stuff for footer*/
 .footer {
     text-align: left;
     padding: 3px;
-    text-indent: 5%;
     background-color: #30292F;
     color: White;
+    text-indent: 2%;
 }
 
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
+/*Common setting for all divs*/
 div {
     align-self: center;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.cent{
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Class to center text*/
+.cent {
     text-align: center;
 }
 
+/*Class to align the Group Name at the top*/
+.topHead {
+    padding-top: 22px;
+    text-align: center;
+}
 
-
+/*Add color to the title*/
+.title {
+    color: grey;
+}

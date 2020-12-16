@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- Add page title   -->
     <title>PHP Panthers</title>
+
+    <!-- Load Google Fonts-->
+    <link href="style_index.css"
+          rel="stylesheet"
+          type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
-<link href="style_index.css"
-      rel="stylesheet"
-      type="text/css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
-      rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
-      rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
-      rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+<!--Display Gorup Name-->
 <h1 class="topHead">
     PHP Panthers
 </h1>
+
+<!--Add navigation bar-->
 <nav>
     <ul>
         <li><a class="active" href="index.php">Homepage</a></li>
@@ -31,10 +38,11 @@
     </ul>
 </nav>
 <?php
-
 // Generate a random number to use to identify the visitor throughout the survey
 $user_id = rand(10000, 99999);
 ?>
+
+<!--Display information about the test-->
 <h2 class="cent">
     Welcome to our Implicit Racial Bias Test!
 </h2>
@@ -51,6 +59,7 @@ $user_id = rand(10000, 99999);
     Additional Resources page and watch the following video:
     <br>
     <br>
+    <!-- Embed YouTube video -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WLQ2OlciaVk"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
@@ -67,13 +76,13 @@ $user_id = rand(10000, 99999);
 <div class="cent">
     <p>Please click on the button below to start the survey:</p>
 
-
     <form method="post" action="q1.php">
         <?php echo '<input type="hidden" name="user_id" value="' . $user_id . '" />'; ?>
         <p><input type="submit" value="Begin Survey"/></p>
     </form>
 </div>
 
+<!--Display teh About the survey section of homepage-->
 <h2 class="cent">
     About the Survey
 </h2>
@@ -92,6 +101,7 @@ $user_id = rand(10000, 99999);
     our Resources page.
 </p>
 
+<!--Add Footer-->
 <div class="footer">
     <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>

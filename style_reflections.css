@@ -1,0 +1,85 @@
+/*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ededed;
+    color: #212121;
+    padding: 1.618rem;
+    line-height: 1.618;
+    font-size: 16px;
+}
+
+.topHead {
+    padding-top: 22px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+p {
+    font-size: x-large;
+}
+
+.content-container {
+    padding: 1.618rem 3.236rem;
+    max-width: 80rem;
+    margin: 3.236rem auto;
+    background-color: #fff;
+    box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05);
+    border-radius: .269666667rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #30292F;
+    font-family: 'Patua One', serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+/* Links will change color when hovered over */
+li a:hover {
+    background-color: #5D737E;
+}
+
+.active {
+    background-color: #3F4045;
+}
+
+.footer {
+    text-align: left;
+    padding: 3px;
+    text-indent: 5%;
+    background-color: #30292F;
+    color: White;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    align-self: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+

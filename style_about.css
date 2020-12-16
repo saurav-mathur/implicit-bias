@@ -10,8 +10,18 @@ body {
 }
 
 h1 {
-    font-family: 'Indie Flower', cursive;;
+    font-family: 'Indie Flower', cursive;
 }
+
+.topHead {
+    padding-top: 22px;
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+}
+
 
 .content-container {
     padding: 1.618rem 3.236rem;
@@ -22,13 +32,14 @@ h1 {
     border-radius: .269666667rem;
 }
 
+
 ul {
     list-style-type: none;
     margin: 1px;
     padding: 1px;
     overflow: hidden;
     background-color: #30292F;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Patua One', serif;
 }
 
 li {
@@ -143,6 +154,6 @@ html {
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }

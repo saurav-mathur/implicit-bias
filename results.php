@@ -12,6 +12,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <title>Implicit Bias Test Results</title>
     <h1 class="topHead">
         PHP Panthers
@@ -152,11 +153,11 @@ $conn->close();
 <div class="content-container">
     <div align="center">
         <img align="center"
-             src="https://cache.careers360.mobi/media/presets/860X430/article_images/2019/6/3/aibe-result.jpg"
+             src="https://ifanboy.com/wp-content/uploads/2013/07/now-what.jpg"
              alt="Jane" style="width:70%">
     </div>
 
-    <h2 align="center">What now?</h2>
+    <h2 align="center">Now what?</h2>
     <p>
         You have taken test and read our interpretation of your data. What next? How do you learn
         from this? We recommend the following:

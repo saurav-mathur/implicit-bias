@@ -157,3 +157,7 @@ html {
     display: flex;
     justify-content: center;
 }
+
+.cent{
+    text-align: center;
+}

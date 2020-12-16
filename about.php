@@ -1,4 +1,4 @@
-<!--adopted from https://www.w3schools.com/howto/howto_css_about_page.asp-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,26 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <h1 class="topHead">
-        PHP Panthers
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a href="results.php">Results</a></li>
-            <li><a href="reflections.php">Reflections</a></li>
-            <li><a class="active" href="about.php">About</a></li>
-            <li><a href="resources.php">Resources</a></li>
-            <li style="float: right;"><a>PHP Panthers</a></li>
-        </ul>
-    </nav>
 </head>
 <body>
+<h1 class="topHead">
+    PHP Panthers
+</h1>
+<nav>
+    <ul>
+        <li><a href="index.php">Homepage</a></li>
+        <li><a href="q1.php">Survey</a></li>
+        <li><a href="results.php">Results</a></li>
+        <li><a href="reflections.php">Reflections</a></li>
+        <li><a class="active" href="about.php">About</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li style="float: right;"><a>PHP Panthers</a></li>
+    </ul>
+</nav>
+
 <?php
 
 ?>
-<h1 align="center">
+<h1 class="cent">
     About Our Team
 </h1>
 
@@ -41,13 +42,13 @@
     <div class="column">
         <div class="card">
             <div class="content-container">
-                <div align="center">
-                    <img align="center"
+                <div class="cent">
+                    <img class="cent"
                          src="http://njandsm.raroyston.org/nirmit_image.jpg"
                          alt="Jane" style="width:70%">
                 </div>
 
-                <h2 align="center">Nirmit Jallawar</h2>
+                <h2 class="cent">Nirmit Jallawar</h2>
                 <!--                <p class="title">CEO & Founder</p>-->
                 <p>Hello and welcome again to our webpage!
                     My name is Nirmit and I am a junior here at Madison. I am majoring in Computer
@@ -62,13 +63,13 @@
     <div class="column">
         <div class="card">
             <div class="content-container">
-                <div align="center">
-                    <img align="center"
+                <div class="cent">
+                    <img class="cent"
                          src="http://njandsm.raroyston.org/saurav_image.jpg"
                          alt="Jane" style="width:70%">
                 </div>
 
-                <h2 align="center">Saurav Mathur</h2>
+                <h2 class="cent">Saurav Mathur</h2>
                 <!--                <p class="title">CEO & Founder</p>-->
                 <p>Hello! I am Saurav Mathur. I am a junior here at UW-Madison and I am double
                     majoring in
@@ -83,13 +84,13 @@
     <div class="column">
         <div class="card">
             <div class="content-container">
-                <div align="center">
-                    <img align="center"
+                <div class="cent">
+                    <img class="cent"
                          src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/99299568_10224177214198489_5073468133155536896_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=vkYB2v8Ms0IAX9f6T5w&_nc_ht=scontent-ort2-1.xx&oh=bb253a40e376cffa46052db64442db0f&oe=5F9F7082"
                          alt="Jane" style="width:70%">
                 </div>
 
-                <h2 align="center">Ashley Massey</h2>
+                <h2 class="cent">Ashley Massey</h2>
                 <!--                <p class="title">CEO & Founder</p>-->
                 <p>My name is Ashley and I am in my second year of grad school here at UW-Madison. I
                     am
@@ -107,7 +108,7 @@
 </div>
 
 <div class="footer">
-    <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang
+    <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang
         for
         LIS 500</p>
 </div>

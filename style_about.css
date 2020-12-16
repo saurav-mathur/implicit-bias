@@ -1,5 +1,6 @@
 /*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
 
+/*Settings for the background*/
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #ededed;
@@ -9,20 +10,17 @@ body {
     font-size: 16px;
 }
 
+/*Set font fo the heading*/
 h1 {
     font-family: 'Indie Flower', cursive;
 }
 
-.topHead {
-    padding-top: 22px;
-    text-align: center;
-}
-
+/*Set font size of the text*/
 p {
     font-size: x-large;
 }
 
-
+/*The "card" CSS*/
 .content-container {
     padding: 1.618rem 3.236rem;
     max-width: 48.54rem;
@@ -32,7 +30,7 @@ p {
     border-radius: .269666667rem;
 }
 
-
+/*Navigation bar CSS stuff*/
 ul {
     list-style-type: none;
     margin: 1px;
@@ -63,6 +61,7 @@ li a:hover {
     background-color: #3F4045;
 }
 
+/*Stuff for footer*/
 .footer {
     text-align: left;
     padding: 3px;
@@ -71,12 +70,7 @@ li a:hover {
     text-indent: 2%;
 }
 
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
+/*Common setting for all divs*/
 div {
     align-self: center;
     padding-left: 10%;
@@ -84,80 +78,23 @@ div {
 }
 
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-}
-
-.about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-}
-
-.container {
-    padding: 0 16px;
-}
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
 .image-container {
     display: flex;
     justify-content: center;
 }
 
-.cent{
+/*Class to center text*/
+.cent {
     text-align: center;
+}
+
+/*Class to align the Group Name at the top*/
+.topHead {
+    padding-top: 22px;
+    text-align: center;
+}
+
+/*Add color to the title*/
+.title {
+    color: grey;
 }

@@ -41,7 +41,7 @@ $user_id = rand(10000, 99999);
 <p class="cent">
     This test/survey is intended to allow the users to get in touch with their own (racial) biases.
     <br>
-    This not a scientifically accurate survey - you may end up with interpretations of your answers
+    This is not a scientifically accurate survey - you may end up with interpretations of your answers
     that you may not necessarily agree with.
     <br>
     Please note that these are just a suggested

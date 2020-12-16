@@ -14,30 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <h1 class="topHead">
-        PHP Panthers
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="index.php">Homepage</a></li>
-            <li><a href="q1.php">Survey</a></li>
-            <li><a href="results.php">Results</a></li>
-            <li><a class="active" href="reflections.php">Reflections</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="resources.php">Resources</a></li>
-            <li style="float: right;"><a>PHP Panthers</a></li>
-        </ul>
-    </nav>
 </head>
 <body>
+<h1 class="topHead">
+    PHP Panthers
+</h1>
+<nav>
+    <ul>
+        <li><a href="index.php">Homepage</a></li>
+        <li><a href="q1.php">Survey</a></li>
+        <li><a href="results.php">Results</a></li>
+        <li><a class="active" href="reflections.php">Reflections</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li style="float: right;"><a>PHP Panthers</a></li>
+    </ul>
+</nav>
+
 <?php
 
 ?>
-<h1 align="center">
+<h1 class="cent">
     Reflections
 </h1>
 
-<div align="center">
+<div class="cent">
     <div class="content-container">
         <h2>
             Nirmit Jallawar
@@ -146,7 +147,7 @@
 </div>
 
 <div class="footer">
-    <p align="center">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
+    <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>
 </div>
 

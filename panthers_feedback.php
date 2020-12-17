@@ -13,11 +13,13 @@
     </h1>
     <nav>
         <ul>
-            <li><a href="index.php" target="_blank">Homepage</a></li>
-            <li><a href="results.php" target="_blank">Results</a></li>
-            <li><a href="reflections.php" target="_blank">Reflections</a></li>
-            <li><a href="about.php" target="_blank">About</a></li>
-            <li style="float: right;"><a>PHP Panthers</a></li>
+            <li><a href="index.php" >Homepage</a></li>
+            <li><a href="results.php" >Results</a></li>
+            <li><a href="reflections.php" >Individual Reflections</a></li>
+            <li><a href="group_analysis.php" >Group Analysis</a></li>
+            <li><a href="about.php" >About</a></li>
+            <li><a href="resources.php" >Resources</a></li>
+            <li style="float: right;"><a href="https://www.raroyston.org/">LIS 500</a></li>
         </ul>
     </nav>
 </head>

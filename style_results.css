@@ -40,15 +40,21 @@ tr:last-of-type {
 
 .content-container {
     padding: 1.618rem 3.236rem;
-    max-width: 48.54rem;
+    
     margin: 3.236rem auto;
     background-color: #fff;
     box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05);
     border-radius: .269666667rem;
 }
 
+table{
+    max-width: 55rem;
+    margin: 3.236rem auto;
+    padding: 1.618rem 3.236rem;
+}
+
 .topHead {
-    padding-top: 22px;
+    padding: 0rem;
     text-align: center;
 }
 

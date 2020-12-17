@@ -3,7 +3,7 @@
 <head>
     <!--    Add title and load the required fonts from Google-->
     <meta charset="utf-8">
-    <title>PHP Panthers</title>
+    <title>About us</title>
     <link href="style_index.css"
           rel="stylesheet"
           type="text/css">
@@ -28,10 +28,11 @@
         <li><a href="index.php">Homepage</a></li>
         <li><a href="q1.php">Survey</a></li>
         <li><a href="results.php">Results</a></li>
-        <li><a href="reflections.php">Reflections</a></li>
+        <li><a href="reflections.php">Individual Reflections</a></li>
+        <li><a href="group_analysis.php" >Group Analysis</a></li>
         <li><a class="active" href="about.php">About</a></li>
         <li><a href="resources.php">Resources</a></li>
-        <li style="float: right;"><a>PHP Panthers</a></li>
+        <li style="float: right;"><a href="https://www.raroyston.org/">LIS 500</a></li>
     </ul>
 </nav>
 

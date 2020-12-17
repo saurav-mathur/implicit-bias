@@ -1,15 +1,28 @@
 /*Help taken from https://www.creativebloq.com/how-to/how-to-implement-light-or-dark-modes-in-css*/
 
+/*style for the body*/
 body {
     font-family: 'Merriweather', serif;
     background-color: #ededed;
     color: #212121;
-    padding: 1.618rem;
+    padding: 0rem;
     line-height: 1.618;
     font-size: 16px;
-    font-weight: 600
+    
 }
 
+/*changing the default style of the submit button*/
+input[type=submit] {
+    padding:5px 15px; 
+    background: #30292F; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: white;
+}
+
+/*style for the form*/
 .content-container {
     padding: 1.618rem 3.236rem;
     max-width: 48.54rem;
@@ -18,19 +31,23 @@ body {
     box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05);
     border-radius: .269666667rem;
 }
+
+/*style for the navigation bar*/
 ul {
     list-style-type: none;
     margin: 1px;
     padding: 1px;
     overflow: hidden;
     background-color: #30292F;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Patua One', serif;
 }
 
+/*style for the navigation bar*/
 li {
     float: left;
 }
 
+/*style for the navigation bar*/
 li a {
     display: block;
     color: white;
@@ -44,6 +61,12 @@ li a:hover {
     background-color: #5D737E;
 }
 
+/*current webpage*/
+.active {
+    background-color: #3F4045;
+}
+
+/*display the number of question*/
 .number {
     color: #3F4045;
     margin-left: 1in;
@@ -51,7 +74,9 @@ li a:hover {
     font-family: 'Merriweather', sans-serif;
 }
 
+/*used for header*/
 .cursive {
+     text-align: center;
     font-family: 'Indie Flower', cursive;;
 }
 
@@ -61,4 +86,9 @@ li a:hover {
     text-indent: 5%;
     background-color: #30292F;
     color: White;
+}
+
+/*to center text*/
+.pcenter{
+    text-align: center;
 }

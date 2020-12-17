@@ -5,7 +5,14 @@
     <!-- Add page title   -->
     <title>PHP Panthers</title>
 
-    <!-- Load Google Fonts-->
+</head>
+<body>
+
+<!--Display Gorup Name-->
+<h1 class="topHead">
+    PHP Panthers
+</h1>
+<!-- Load Google Fonts-->
     <link href="style_index.css"
           rel="stylesheet"
           type="text/css">
@@ -17,24 +24,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!--Display Gorup Name-->
-<h1 class="topHead">
-    PHP Panthers
-</h1>
-
 <!--Add navigation bar-->
 <nav>
     <ul>
         <li><a class="active" href="index.php">Homepage</a></li>
         <li><a href="q1.php">Survey</a></li>
         <li><a href="results.php">Results</a></li>
-        <li><a href="reflections.php">Reflections</a></li>
+        <li><a href="reflections.php">Individual Reflections</a></li>
+        <li><a href="group_analysis.php" >Group Analysis</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="resources.php">Resources</a></li>
-        <li style="float: right;"><a>PHP Panthers</a></li>
+        <li style="float: right;"><a href="https://www.raroyston.org/">LIS 500</a></li>
     </ul>
 </nav>
 <?php
@@ -91,8 +91,7 @@ $user_id = rand(10000, 99999);
     This survey is meant to make the test taker think more about their own biases, whether
     positive or negative.
     <br>
-    It does so by posing them with questions where a responses on one end of the spectrum
-    indicates a bias.
+    It does so by posing them with questions where a responses on one end of the spectrum may indicates a bias.
     <br>
     This should not be thought of as a test, but more of a tool that can help you understand your
     affinity towards a school of thought.

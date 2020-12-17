@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Import Google Fonts-->
     <link href="style_results.css"
           rel="stylesheet"
           type="text/css">
@@ -15,21 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Pacifico&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <!--Add title-->
     <title>Implicit Bias Test Results</title>
 </head>
 <body>
+    <!--Add heading-->
 <h1 class="topHead">
     PHP Panthers
 </h1>
+<!--Add navigation bar-->
 <nav>
     <ul>
         <li><a href="index.php">Homepage</a></li>
         <li><a href="q1.php">Survey</a></li>
         <li><a class="active" href="results.php">Results</a></li>
-        <li><a href="reflections.php">Reflections</a></li>
+        <li><a href="reflections.php">Individual Reflections</a></li>
+        <li><a href="group_analysis.php" >Group Analysis</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="resources.php">Resources</a></li>
-        <li style="float: right;"><a>PHP Panthers</a></li>
+        <li style="float: right;"><a href="https://www.raroyston.org/">LIS 500</a></li>
     </ul>
 </nav>
 
@@ -37,8 +42,8 @@
 
 // Created by: Bryan Knowles
 // Based on:
-// Last Modified on: Oct 28, 2020
-// Last Modified by: Bryan Knowles
+// Last Modified on: Dec 18, 2020
+// Last Modified by: Nirmit Jallawar
 
 // Grab the user id from the POST data sent to us from previous page
 $user_id = $_POST["user_id"];
@@ -90,6 +95,7 @@ $results3 = $query3->get_result();
 
 ?>
 
+<!--Thank You section-->
 <div class="content-container">
     <div class="cent">
         <img class="cent"
@@ -107,12 +113,27 @@ $results3 = $query3->get_result();
         <br>
         After you have viewed your results, please consult the information given below to interpret
         your results.
+        <br>
+        <br>
+        1 -> Strongly Disagree
+        <br>
+        5 -> Strongly Agree
+        <br>
+        <br>
+        
+        If your answer was close to 5 for questions 1, 2, 3, 4, 6, 7, 8, 9, 10,and 12, that may indicate an affinity towards people who share the same race and/or culture as you.
+        <br>
+        <br>
+        If your answer was close to 1 for questions 5, and 11, that may indicate an affinity towards people who share the same race and/or culture as you.
+        
+        <br>
+        <br>
+        We purposefully chose not to keep the split between the two groups even so as to dissuade people from guessing what their answer might lead to in the results. 
     </p>
 </div>
 
+<!--Dispplay results in using PHP and SQL as a table-->
 <?php
-
-
 echo '<table class="center">';
 echo '<tr>';
 echo '<th>';
@@ -129,8 +150,9 @@ echo 'Most frequent result';
 echo '</th>';
 echo '</tr>';
 
+// Add question number
 $q_num = 1;
-
+// Add the SQL data
 while ($result2 = $results2->fetch_assoc()) {
     $result1 = $results1->fetch_assoc();
     $result3 = $results3->fetch_assoc();
@@ -151,6 +173,7 @@ $conn->close();
 
 ?>
 
+<!--What next section-->
 <div class="content-container">
     <div class="cent">
         <img class="cent"
@@ -175,7 +198,7 @@ $conn->close();
     </p>
 </div>
 
-
+<!--Add footer-->
 <div class="footer">
     <p class="cent">Created by Nirmit Jallawar, Saurav Mathur, Ashley Massey and Yutong Wang for
         LIS 500</p>

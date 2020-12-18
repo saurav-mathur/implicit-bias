@@ -69,25 +69,13 @@ LIS 500: As for the course, I felt that I learnt a lot, (and have many more ques
             Saurav Mathur
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida sem diam. Nam eu
-            tellus
-            rhoncus est posuere convallis eu ac lacus. Etiam rutrum neque ac viverra fermentum.
-            Etiam
-            tincidunt, nisl et facilisis viverra, urna eros feugiat ante, et vulputate turpis nunc
-            bibendum urna. Curabitur nec felis sed justo malesuada lobortis at sit amet tellus. Orci
-            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Aliquam
-            erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac
-            turpis egestas. Phasellus justo ligula, scelerisque et convallis cursus, vestibulum ut
-            magna. Nunc pretium accumsan tellus eget consectetur. Proin in elit venenatis, hendrerit
-            turpis tincidunt, lobortis nulla. Praesent dolor nisi, commodo eget nibh bibendum,
-            egestas
-            efficitur turpis. Ut dictum facilisis aliquam. Nam fringilla imperdiet mauris eget
-            tempus.
-            Curabitur in justo quis mi efficitur tincidunt. Nullam tempus faucibus tellus, eget
-            gravida
-            quam sodales ac.
+            This semester has been significantly different than the previous ones, as the majority of the classes have been remotely administered online because of the global pandemic. 
+The first pair assignment in the course was great to develop teamwork and coordination skills. It was great to work remotely with a teammate, as online classes this semester meant that there was minimal interaction with peers in our classes. Working in pairs for the assignments was helpful as we could take help from each other whenever we got stuck on a particular part of the assignment. I hence got to learn a lot from my partner, Nirmit, and was able to help him with some parts of html and css coding. The second assignment helped me get to know my partner better, and gave me an opportunity to learn the basics of building and hosting a website on a remote server. Although making a website from scratch seemed challenging at first, I became more comfortable with coding in html as the semester progressed by.</p>
+ 
+<p>The final project expanded the pair programming experience to working with a group of four people. Me and my partner from the initial assignments, Nirmit, were grouped to work with two graduate students, Ashley and Yutong for our final project. By working together in a team of four, I learned how to better chalk out a plan with team mates such that each member can make effective contributions to the group. I enjoyed working on the final project, wherein we created an alternative to the harvard implicit racial bias test. Our group tried our best to come up with interesting questions for the survey and coming up with creative ways of displaying the results and analysis of the survey on completion. For the project, I worked on building various pages of our website, changing and improving with iterations of feedback that we received. I also led in designing the survey questions page, formulating queries for the answers we received and analysing the results.</p>
+
+<p>Finally, this course was structured very well. Being relatively new to html and css coding, the first few weeks helped me recall coding basics and helped build a strong foundation for website development. The assignment on sharing our favorite tech heroes helped me learn a lot about women and people of color who have made great contributions to the development of the tech industry. The part of class I found the most interesting was the weekly group-wise discussion. The discussion forum gave us an opportunity to not only highlight important weekly takeaways but also provided us with the ability to ask important questions as discussion leaders, and answer questions asked by other peers. The concepts of Hegemony and Meritocracy highlighted how different types of bias prevails in the current day tech industry. It was fascinating to learn how popular search engines like google have played a major role in creating and promoting racial stereotypes in people, a process explained with great detail by author Safiya Noble in her work ‘Algorithms of Oppression.’ The readings each week provided insightful information on the accompanying topics, and evoked interest in learning more about the topics. Links to online articles on different tags used in html, css and php coding answered a lot of questions regarding the syntax of various functions. It was great fun learning to code in php, and building elements that were not just static but changed dynamically on the website. I had always wondered where all of the anonymous feedback that we often provide to companies after using online services like amazon gets stored and processed. The tutorial on creating database tables and incorporating them to create feedback forms was an important skill that I developed in this course. Taking the harvard implicit bias test for a couple of weeks before starting to build our own website was a productive practice. The only thing, if any that I found would have helped me learn better in this course were more synchronous lectures and discussions. Overall, the course was very effective in propagating the idea of how and why is bias present in the tech industry as a whole and what we can do to prevent it. I would like to thank Professor Reginold Royston and Bryan Knowles for a wonderful semester!
+
         </p>
     </div>
     <div class="content-container">
